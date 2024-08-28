@@ -87,10 +87,16 @@ This repository contains Terraform scripts for creating and managing network inf
 │   └── eks-outputs.tf        # EKS related outputs
 ├── README.md                 # Project documentation
 ├── terraform.tfvars          # File for setting user-specific variable values (not version controlled)
-└── modules/                  # Reusable Terraform modules (if applicable)
+└── modules/                  # Reusable Terraform modules
     ├── vpc/                  # Module for VPC creation
     ├── subnets/              # Module for subnets creation
-    └── security-groups/      # Module for security groups
+    ├── security-groups/      # Module for security groups
+    ├── nat_gateway/          # Module for NAT gateway configuration
+    ├── igw/                  # Module for Internet Gateway configuration
+    ├── route-tables/         # Module for route table configuration
+    ├── eks-node-group/       # Module for EKS node group configuration
+    ├── elastic-ip/           # Module for managing Elastic IP addresses
+    └── others/               # Other modules as required (e.g., for specific services or resources)
 ```
 
 ## EKS Provisioning
